@@ -72,8 +72,8 @@
 <path d="M15 6H3c-.825 0-1.492.675-1.492 1.5l-.008 9c0 .825.675 1.5 1.5 1.5h12c.825 0 1.5-.675 1.5-1.5v-9c0-.825-.675-1.5-1.5-1.5Zm-.3 3.188-5.302 3.314a.759.759 0 0 1-.796 0L3.3 9.188a.637.637 0 1 1 .675-1.08L9 11.25l5.025-3.143a.637.637 0 1 1 .675 1.08Z"/>
 
  </symbol>
- <symbol id="" viewBox="0 0 18 18">
-
+ <symbol id="icon-burger-menu" viewBox="0 0 32 22">
+<path stroke="#2E2F42" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M1.348 20.043h29.538M1.348 10.735h29.538M1.348 1.428h29.538"/>
  </symbol>
 
 
