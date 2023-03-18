@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="page-header-portfolio">
+    <header class="page-header page-header-portfolio">
       <div class="container container-header">
         <nav class="site-nav">
           <a class="logo-first" href="./index.html">
@@ -27,14 +27,12 @@
           >
           <ul class="nav-items">
             <li class="nav-item">
-              <a class="nav-item-link header-link" href="./index.html"
+              <a class="nav-item-link header-link current" href="./index.html"
                 >Studio</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-item-link header-link current"
-                href="./portfolio.html"
+              <a class="nav-item-link header-link" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -58,6 +56,93 @@
             </li>
           </ul>
         </address>
+        <!-- 1 -->
+
+        <!-- 2 -->
+        <!-- modal phone -->
+
+        <button class="open-mobile-menu-button btn js-open-menu">
+          <svg class="open-mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container">
+          <div class="mobile-nav">
+            <button class="close-mobile-menu-button btn js-close-menu">
+              <svg class="close-mobile-menu-icon" width="8" height="8">
+                <use href="./images/icons.svg#X"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu-content-container">
+              <ul class="mobile-menu-nav list-style">
+                <li class="mobile-menu-nav-item">
+                  <a
+                    class="mobile-menu-nav-link link current"
+                    href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mobile-menu-nav-item">
+                  <a class="mobile-menu-nav-link link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mobile-menu-nav-item">
+                  <a class="mobile-menu-nav-link link" href="">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-menu-contacts">
+              <ul class="mobile-menu-address-list list-style">
+                <li class="mobile-menu-address-item">
+                  <a
+                    class="mobile-menu-address-link link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-menu-address-item">
+                  <a
+                    class="mobile-menu-address-link mobile-menu-email link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mobile-menu-social-list">
+                <li class="mobile-menu-social-item">
+                  <a href="" class="mobile-menu-social-link">
+                    <svg class="mobile-menu-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu-social-item">
+                  <a href="" class="mobile-menu-social-link">
+                    <svg class="mobile-menu-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu-social-item">
+                  <a href="" class="mobile-menu-social-link">
+                    <svg class="mobile-menu-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu-social-item">
+                  <a href="" class="mobile-menu-social-link">
+                    <svg class="mobile-menu-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Main-content -->
@@ -81,10 +166,14 @@
               <a class="work-company-box" href=""
                 ><div class="box">
                   <img
+                    srcset="
+                      ./images/portfolio/portfolio-works1.jpg    1x,
+                      ./images/portfolio/portfolio-works1@2x.jpg 2x
+                    "
                     src="./images/portfolio/portfolio-works1.jpg"
                     alt="bank-interface"
+                    class="img-portfolio"
                     width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -105,10 +194,14 @@
               <a class="work-company-box" href=""
                 ><div class="box">
                   <img
+                    srcset="
+                      ./images/portfolio/portfolio-works2.jpg    1x,
+                      ./images/portfolio/portfolio-works2@2x.jpg 2x
+                    "
                     src="./images/portfolio/portfolio-works2.jpg"
                     alt="telephone-payment"
+                    class="img-portfolio"
                     width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -129,10 +222,14 @@
               <a class="work-company-box" href="">
                 <div class="box">
                   <img
+                    srcset="
+                      ./images/portfolio/portfolio-works3.jpg    1x,
+                      ./images/portfolio/portfolio-works3@2x.jpg 2x
+                    "
                     src="./images/portfolio/portfolio-works3.jpg"
                     alt="MacBook"
+                    class="img-portfolio"
                     width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -152,10 +249,14 @@
               <a class="work-company-box" href=""
                 ><div class="box">
                   <img
+                    srcset="
+                      ./images/portfolio/portfolio-works4.jpg    1x,
+                      ./images/portfolio/portfolio-works4@2x.jpg 2x
+                    "
                     src="./images/portfolio/portfolio-works4.jpg"
                     alt="Taxi"
+                    class="img-portfolio"
                     width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -175,10 +276,14 @@
               <a class="work-company-box" href="">
                 <div class="box">
                   <img
+                    srcset="
+                      ./images/portfolio/portfolio-works5.jpg    1x,
+                      ./images/portfolio/portfolio-works5@2x.jpg 2x
+                    "
                     src="./images/portfolio/portfolio-works5.jpg"
                     alt="telephone-design"
+                    class="img-portfolio"
                     width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -198,10 +303,14 @@
               <a class="work-company-box" href="">
                 <div class="box">
                   <img
+                    srcset="
+                      ./images/portfolio/portfolio-works6.jpg    1x,
+                      ./images/portfolio/portfolio-works6@2x.jpg 2x
+                    "
                     src="./images/portfolio/portfolio-works6.jpg"
                     alt="Woman"
+                    class="img-portfolio"
                     width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -222,10 +331,14 @@
               <a class="work-company-box" href="">
                 <div class="box">
                   <img
+                    srcset="
+                      ./images/portfolio/portfolio-works7.jpg    1x,
+                      ./images/portfolio/portfolio-works7@2x.jpg 2x
+                    "
                     src="./images/portfolio/portfolio-works7.jpg"
                     alt="Instagram-stories"
+                    class="img-portfolio"
                     width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -245,10 +358,14 @@
               <a class="work-company-box" href=""
                 ><div class="box">
                   <img
+                    srcset="
+                      ./images/portfolio/portfolio-works8.jpg    1x,
+                      ./images/portfolio/portfolio-works8@2x.jpg 2x
+                    "
                     src="./images/portfolio/portfolio-works8.jpg"
                     alt="Vegetables"
+                    class="img-portfolio"
                     width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -268,10 +385,14 @@
               <a class="work-company-box" href=""
                 ><div class="box">
                   <img
+                    srcset="
+                      ./images/portfolio/portfolio-works9.jpg    1x,
+                      ./images/portfolio/portfolio-works9@2x.jpg 2x
+                    "
                     src="./images/portfolio/portfolio-works9.jpg"
                     alt="Coffee"
+                    class="img-portfolio"
                     width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -336,28 +457,39 @@
             </li>
           </ul>
         </div>
-         <div class="subsribe">
-          <form class="form-footer">
-            <label class="form-label">
-              Subscribe
-              <div class="form-flex">
-              <input
-                type="email"
-                name="username"
-                placeholder="E-mail"
-                class="input-footer"
-              />
-            </label>
-            <button type="submit" class="subscribe-btn">
-              Subscribe
-              <svg class="subscribe-icon">
-                <use href="./images/icons.svg#subscribe"></use>
-              </svg>
-            </button>
+        <div class="subsribe">
+          <form class="footer-form">
+            <p class="footer-form-descr">Subscribe</p>
+            <div class="footer-label-button-container">
+              <label class="footer-form-field">
+                <span class="footer-form-input-descr visually-hidden"
+                  >Email</span
+                >
+                <input
+                  type="email"
+                  name="user_email"
+                  class="footer-form-input"
+                  required
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="footer-form-submit btn">
+                Subscribe
+                <svg class="footer-form-input-icon" width="24" height="24">
+                  <use href="./images/icons.svg#subscribe"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
