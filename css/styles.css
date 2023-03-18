@@ -200,20 +200,7 @@ img {
     margin-right: 0;
   }
 }
-@media screen and (max-width: 767px) {
-  .hero-info {
-    width: calc(100% - 112px);
-    max-width: 318px;
-    font-size: 36px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero-info {
-    width: 496px;
-    font-size: 56px;
-    margin-bottom: 40px;
-  }
-}
+
 /* Mobile menu */
 @media screen and (min-width: 768px) {
   .open-mobile-menu-button {
@@ -233,26 +220,24 @@ img {
   cursor: pointer;
 }
 
-.mobile-menu {
-  overflow: hidden;
+.menu-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-
   height: 100%;
-  z-index: 1000;
-
+  padding: 80px 50px 40px 40px;
   background-color: #ffffff;
-  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  overflow: auto;
-
-  transition: opacity var(--transition), visibility var(--transition);
+  z-index: 2;
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.menu-container.is-open {
+  transform: translateX(0);
 }
 
 .is-open {
@@ -260,9 +245,20 @@ img {
   visibility: visible;
   pointer-events: auto;
 }
+.mobile-nav {
+  width: 100%;
+  height: 100%;
+  max-width: 428px;
+  max-height: 796px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
 .mobile-menu-container {
-  position: relative;
+  position: fixed;
   padding-top: 80px;
   padding-left: 0;
   padding-right: 35px;
@@ -270,11 +266,14 @@ img {
   max-width: 400px;
   margin: 0 auto;
 }
+.mobile-menu-contacts {
+  margin-top: 284px;
+}
 
 .close-mobile-menu-button {
   position: absolute;
-  top: 24px;
-  right: 15px;
+  top: 40px;
+  right: 40px;
 
   transform: translateX(-20%);
 
@@ -284,12 +283,12 @@ img {
 
   padding: 0;
   line-height: 0;
-
+  margin: 0;
   width: 24px;
   height: 24px;
-
+  cursor: pointer;
   color: var(--heading-color);
-  background-color: transparent;
+  background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(46, 47, 66, 0.1);
 
@@ -304,12 +303,6 @@ img {
 
 .close-mobile-menu-icon {
   fill: currentColor;
-}
-
-.mobile-menu-content-container {
-  display: flex;
-  flex-direction: column;
-  gap: 284px;
 }
 
 .mobile-menu-nav-item:not(:last-child) {
@@ -354,13 +347,16 @@ img {
 .mobile-menu-address-link {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
+  line-height: 40px;
+  letter-spacing: 0;
+
   text-transform: capitalize;
 
-  color: var(--brand-color);
+  /* IRIS */
+
+  color: #4d5ae5;
 }
 
 .mobile-menu-email {
@@ -415,23 +411,6 @@ img {
   fill: currentColor;
 }
 
-/* .section-hero {
-  height: 600px;
-  max-width: 1440px;
-  margin: auto;
-  background-color: var(--heading-color);
-  align-items: center;
-  padding: 188px 0px 188px 0px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/main-page/people-office.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1440px auto;
-}
- */
 .section-hero {
   background-color: #2e2f42;
   text-align: center;
@@ -463,7 +442,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/main-page/hero-bg/hero-bg@2x.jpg);
+      url(../images/main-page/hero-bg/mobile-bg-img@2x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -539,7 +518,7 @@ img {
 }
 /* qw */
 .hero-info {
-  font-size: 36px;
+  font-size: 56px;
   color: #ffffff;
   letter-spacing: 0.02em;
   line-height: 1.07;
@@ -548,6 +527,13 @@ img {
   margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .hero-info {
+    width: calc(100% - 112px);
+    max-width: 318px;
+    font-size: 36px;
+  }
 }
 
 .open-modal {
@@ -1518,7 +1504,7 @@ img {
     margin-left: auto;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 428px) and (max-width: 767px) {
   .footer-form-input {
     width: 396px;
   }
