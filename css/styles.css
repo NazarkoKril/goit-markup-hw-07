@@ -169,7 +169,7 @@ img {
 .contact-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
+
   margin: 0;
 }
 .contacts .contact a {
@@ -535,7 +535,13 @@ img {
     font-size: 36px;
   }
 }
-
+@media screen and (min-width: 768px) {
+  .hero-info {
+    width: 496px;
+    font-size: 56px;
+    margin-bottom: 40px;
+  }
+}
 .open-modal {
   font-family: "Roboto";
   font-style: normal;
@@ -658,6 +664,7 @@ img {
 
 .advantages-list .text {
   font-size: 16px;
+  line-height: 24px;
 }
 @media screen and (max-width: 767px) {
   .values .container {
@@ -762,6 +769,24 @@ img {
   background-color: #f4f4fd;
   align-items: center;
   padding: 120px 0px 120px 0px;
+}
+@media screen and (max-width: 767px) {
+  .section-staff {
+    padding-top: 96px;
+    padding-bottom: 128px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-staff {
+    padding-top: 96px;
+    padding-bottom: 104px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-staff {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 .work-h {
   font-weight: 700;
@@ -1035,7 +1060,7 @@ img {
   /* flex-basis: calc((100% - 2 * 24px) / 3); */
   display: flex;
   flex-wrap: wrap;
-  /* column-gap: 24px; */
+  column-gap: 24px;
   row-gap: 48px;
 }
 img.img-portfolio {
@@ -1512,6 +1537,33 @@ img.img-portfolio {
     width: 396px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container-footer {
+    gap: 72px 24px;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 552px;
+  }
+  .footer-social {
+    margin-left: 0;
+  }
+  .section-5 {
+    padding: 96px 0px 96px 0px;
+  }
+  .subsribe {
+    margin-left: 0;
+  }
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .container.container-footer {
+    padding: 0;
+  }
+}
 /* Portfolio */
 @media screen and (max-width: 767px) {
   .filter-buttons {
@@ -1526,7 +1578,6 @@ img.img-portfolio {
   }
   .box {
     width: 396px;
-    background-size: cover;
   }
 
   .info-work {
@@ -1537,5 +1588,26 @@ img.img-portfolio {
   }
   .work-company-box {
     width: 396px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter-buttons {
+    margin-bottom: 64px;
+  }
+  .section-btn {
+    padding-top: 64px;
+  }
+  .box {
+    width: 356px;
+  }
+
+  .info-work {
+    width: 356px;
+  }
+  img.img-portfolio {
+    width: 356px;
+  }
+  .work-company-box {
+    width: 356px;
   }
 }
